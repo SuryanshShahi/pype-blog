@@ -11,21 +11,47 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "Description": {
-      "type": "blocks"
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "Images": {
+    "coverImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ]
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "authorImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
     }
   }
 }
