@@ -3,11 +3,11 @@ export default [
   "strapi::errors",
   "strapi::security",
   {
-    name: "strapi::cors",
+    name: 'strapi::cors',
     config: {
-      origin: ["https://pypeai.com"],
-      methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
+      origin: ['*'],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      headers: '*',
     },
   },
   "strapi::poweredBy",
